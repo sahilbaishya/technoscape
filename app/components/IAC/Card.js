@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Card(props){
     return(
         <motion.div className="flex justify-start mx-10 my-4 shadow-lg p-8 rounded-md"
-        whileHover={{ scale: [null, 1.2, 1.1] }}
+        whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.3 }}
         whileTap={{ scale: 0.9 }}
         >

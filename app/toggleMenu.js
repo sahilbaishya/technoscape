@@ -1,36 +1,25 @@
-import './toggleMenu.css'
-import React, { useState } from 'react';
-import Link from 'next/link';
-// import myImage from '../static/img/bg.jpeg';
+import React from "react";
+import { slide as Menu } from "react-burger-menu";
 
-
-export default function Toggle() {
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-
+export default props => {
   return (
+    // Pass on our props
+    <Menu right {...props} noOverlay >
+      <a className="menu-item" href="/">
+        Home
+      </a>
 
-    <div className={`${isMenuOpen ? 'open' : ""}`}>
-      <button className="burger" onClick={toggleMenu}>
-      </button>
-      <div className="background"></div>
-      <div id='menu_id'>
-        <nav>
-          <Link href={"/"} style={{ LinknimationDelay: "0.2s" }}>Home</Link>
-          <Link href={"/"} style={{ animationDelay: "0.3s" }}>About</Link>
-          <Link href={"/"} style={{ animationDelay: "0.4s" }}>Conference Themes</Link>
-          <Link href={"/"} style={{ animationDelay: "0.5s" }}>Committee</Link>
-          <Link href={"/"} style={{ animationDelay: "0.6s" }}>International Advisory Committee</Link>
-          <Link href={"/"} style={{ animationDelay: "0.7s" }}>Partners</Link>
-          <Link href={"/"} style={{ animationDelay: "0.8s" }}>Abstract Submission</Link>
-          <Link href={"/"} style={{ animationDelay: "0.9s" }}>Contact Us</Link>
-        </nav>
-      </div>
-    </div>
-  )
-}
+      <a className="menu-item" href="/about">
+        About
+      </a>
+
+      <a className="menu-item" href="/services">
+        Services
+      </a>
+
+      <a className="menu-item" href="/contact">
+        Contact us
+      </a>
+    </Menu>
+  );
+};

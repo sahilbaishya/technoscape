@@ -64,7 +64,10 @@ body {
 
 /* Wrapper for item list */
 .bm-item-list {
-    margin-right: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   color: #b8b7ad;
   font-size: larger;
 }

@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Roboto } from 'next/font/google'
-
+import Nav from "../header/page"
 const roboto = Roboto({
     weight: ['400', '700'],
     style: ['normal', 'italic'],
@@ -10,6 +10,7 @@ const roboto = Roboto({
 export default function Hero(){
     return(
         <>
+        <Nav/>
             <main className="flex flex-col-reverse lg:flex-row gap-8 items-center justify-center">
                 <div className="flex items-start justify-center lg:justify-start flex-col basis-1/2 ml-8 lg:ml-16">
                     <h2 className={`${roboto.className} text-xl lg:text-4xl font-normal text-[#006892]`}>International Conference on</h2>

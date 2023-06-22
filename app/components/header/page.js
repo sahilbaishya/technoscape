@@ -31,11 +31,11 @@ export default function Nav() {
           outerContainerId={"outer-container"}
         />
       </div>
-      <div className="shadow-sm w-full h-[100px] flex flex-row gap-[4%] justify-center pl-10 text-center items-center">
-        <Image src="/sdg6.png" width={100} height={100} className="uni"/>
-        <Image src="/VITBlue.png" width={100} height={100} className="uni"/>
+      <div className="shadow-sm w-full h-[100px] flex flex-row gap-[6%] justify-center pl-10 text-center items-center">
+        <Image src="/sdg6.png" width={100} height={100} className="uni mt-1"/>
+        <Image src="/VITBlue.png" width={100} height={100} className="w-[200px] h-[40px] mt-3"/>
         <Image src="/ynu_logo_en.jpg" width={100} height={100} className="uni"/>
-        <Image src="/Danskuni.png" width={100} height={100} className="w-[200px] h-[200px]"/>
+        <Image src="/Danskuni.png" width={100} height={100} className="w-[200px] h-[300px] mt-3"/>
       </div>
     </div>
   );
